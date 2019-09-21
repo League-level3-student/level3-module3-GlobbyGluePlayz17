@@ -33,11 +33,13 @@ public class _00_TestSpecialString {
 	}
 	
 	//4. Create your own class that extends SpecialString.
-	//   Override the funkifyText method to make any kind of 
+	//   Override the funkifyText method to make any kind of
 	//   new String you want. Then use the assertEquals method in
 	//   the JUnitTest case below to test your customized Special String.
 	@Test
 	public void testCustomString() {
-	
+		SpecialString cs = new SymbolStrings("This is also a test");
+		System.out.println(cs);
+		assertEquals("Thi$ i$ @l$o @ t3$t", cs.toString());
 	}
 }
